@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="seed" content="6038943">
+<meta name="seed" content="233923962">
 <title>Tajny Mikołaj</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
@@ -220,7 +220,7 @@
   const PRISTINE = document.documentElement.outerHTML; // captured before any DOM changes, used for reset republish
   const SEED = parseInt(document.querySelector('meta[name="seed"]').content, 10);
   const PIN = "1225";
-  const NAMES = ["Oluś", "Zosia", "Konrad", "Angelika", "Błażko", "Asia", "Leszek"];
+  const NAMES = ["Oluś", "Zosia", "Konrad", "Angelika", "Błażko", "Asia", "Leszek", "Julka"];
   const FORBIDDEN = [["Konrad", "Angelika"], ["Angelika", "Konrad"]];
   const STORE_KEY = "tajny-mikolaj-" + SEED;
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -268,7 +268,7 @@
 
   // ---- wheel drawing ----
   const SEG = 360 / NAMES.length;
-  const COLORS = ["var(--seg-a)", "var(--seg-b)", "var(--seg-c)", "var(--seg-d)", "var(--seg-a)", "var(--seg-b)", "var(--seg-d)"];
+  const COLORS = ["var(--seg-a)", "var(--seg-b)", "var(--seg-c)", "var(--seg-d)", "var(--seg-a)", "var(--seg-b)", "var(--seg-c)", "var(--seg-d)"];
   const wheel = document.getElementById("wheel");
   const bulbs = document.getElementById("bulbs");
   const R = 180, CX = 200, CY = 200;
